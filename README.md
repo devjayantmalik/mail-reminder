@@ -8,7 +8,7 @@
 
 ## Useful Routes
 
-We need to manually visit [https://devjayantmailik-mail-reminder.glitch.me/process](https://devjayantmailik-mail-reminder.glitch.me/process) to send emails that are registered for today. Because we are using free plan, and free plan do not support cron jobs. Thanks.
+We need to manually visit [https://devjayantmalik-mail-reminder.glitch.me/process](https://devjayantmalik-mail-reminder.glitch.me/process) to send emails that are registered for today. Because we are using free plan, and free plan do not support cron jobs. Thanks.
 
 ## Completed App
 
