@@ -2,10 +2,6 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const monk = require("monk");
 const send = require("./mailer");
-const dotenv = require("dotenv");
-
-// setup the environment variables
-dotenv.config();
 
 // local development docker container address for mongodb
 // const uri = process.env.MONGODB_URI || "172.17.0.2:27017/mail-reminder";
