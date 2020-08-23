@@ -5,9 +5,9 @@ const send = require("./mailer");
 
 // local development docker container address for mongodb
 // const uri = process.env.MONGODB_URI || "172.17.0.2:27017/mail-reminder";
-
+const uri = process.env.MONGODB_URI;
 // setup database and app
-const db = monk(process.env.MONGODB_URI);
+const db = monk(uri);
 const app = express();
 
 // create collections inside database
