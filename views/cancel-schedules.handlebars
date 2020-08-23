@@ -1,0 +1,60 @@
+<main>
+  <section>
+    <h1 class="heading">Mail Canceller</h1>
+    <p>Maybe, you can provide us your details, so we can remind you.</p>
+
+    <form action="/cancel" method="POST">
+      <div>
+        <label for="email">Your Email Address</label>
+        <input id="email" name="email" type="email" placeholder="username@domain.com" />
+      </div>
+
+      <button type="submit">View your schedules.</button>
+    </form>
+  </section>
+
+  {{#if schedules}}
+  <section>
+    <h2 class="heading">Your added Schedules</h2>
+    <p>
+      You have {{schedules.length}} schedules.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Message</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each schedules}}
+        <tr>
+          <td>{{this.email}}</td>
+          <td>{{this.date}}</td>
+          <td>{{this.message}}</td>
+          <td><a href="/delete/{{this._id}}">Delete</a></td>
+        </tr>
+        {{/each}}
+
+      </tbody>
+    </table>
+    <ul>
+
+    </ul>
+  </section>
+  {{/if}}
+
+  {{#if error}}
+  <section>
+    <h2 class="heading">Error Occured!</h2>
+    <p class="message">{{error}}</p>
+  </section>
+  {{/if}}
+
+
+</main>
+</body>
+
+</html>

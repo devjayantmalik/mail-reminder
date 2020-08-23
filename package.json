@@ -1,0 +1,19 @@
+{
+  "name": "mail-reminder",
+  "version": "1.0.0",
+  "description": "A app to remind you of something via email",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "author": "Jayant Malik",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "monk": "^7.3.1",
+    "nodemailer": "^6.4.11"
+  }
+}
